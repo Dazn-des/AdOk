@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Recoleta;
+}
+
+
+/*---------------menu-section--------------*/
+
+button{
+  border: 0;
+  padding: 12px 10px;
+  outline: 1px;
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px black;
+}
+
+button:hover{
+  color: white;
+  background-color: #F23005;
+}
+
+.logo{
+  width: 50%;
+  cursor: pointer;
+}
+
+.menu{
+  width: 20px;
+  align-items: center;
+}
+
+
+#nav-bar{
+  position: sticky;
+  top: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  z-index: 100;
+}
+
+.navbar{
+  background: white;
+}
+
+.navbar-brand{
+  height: 90px;
+}
+
+.navbar-nav li
+{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+
+}
+
+.navbar-nav li a
+{
+  font-family: 'Circular Std Medium', sans-serif;
+  float: right;
+  text-align: left;
+}
+
+.navbar-nav li a:hover
+{
+  color: #F23005;
+}
+
+
+/*---------------banner-section--------------*/
+
+#banner {
+  background-color: #F4F4F4;
+  color: black;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 100px;
+}
+
+.claim {
+  font-family: 'Circular Std Medium', sans-serif;
+  font-size: 40px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 40px;
+
+}
+
+.btn{
+  background-color: white;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: 'Circular Std Medium', sans-serif;
+  font-size: 15px;
+}
+
+.btn:hover{
+  background-color: #F23005;
+}
+
+.btn-artigiano{
+  background-color: #F4F4F4;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: 'Circular Std Medium', sans-serif;
+  font-size: 15px;
+  float: right;
+}
+
+.img-fluid{
+  width:250%;
+}
+
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*---------------function-section--------------*/
+
+#function{
+  color: black;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.claim-2{
+  font-family: 'Circular Std Medium', sans-serif;
+  font-size: 32px;
+  flex-basis: 100%;
+}
+
+.title{
+  font-family: 'Circular Std Medium', sans-serif;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+/*no*/
+
+.column-right{
+  font-family: 'Circular Std Light', sans-serif;
+  text-align: right;
+  width: 40%;
+  padding-top: 70px;
+  margin-right: 30px;
+}
+
+.column-left{
+  font-family: 'Circular Std Light', sans-serif;
+  text-align: left;
+  width: 40%;
+  padding-top: 70px;
+  margin-left: 30px;
+}
+
+/*no*/
+
+
+.col-md-4{
+  font-family: 'Circular Std Light', sans-serif;
+}
+
+.image-center{
+  width: 100%;
+  align-items: center;
+}
+
+
+/*---------------services-section--------------*/
+
+#services {
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.services-title{
+  font-size: 32px;
+  text-align: center;
+}
+
+.services-image{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/*---------------services-section--------------*/
+
+
+#tools{
+  background-color: #F4F4F4;
+  color: black;
+  margin-bottom: 100px;
+  padding-top: 40px;
+}
+
+.tools-title{
+  font-family: 'Recoleta';
+  font-size: 32px;
+}
+
+.tools-text{
+  font-family: 'Circular Std Light', sans-serif;
+  font-size: 18px;
+}
+
+@media only screen and (max-width:400px){
+  .claim{
+    flex-basis: 100%;
+    margin: 50px 0;
+
+  }
