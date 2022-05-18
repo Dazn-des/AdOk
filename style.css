@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: Recoleta;
+  font-family: 'Recoleta', sans-serif;
 }
 
 
@@ -85,19 +85,18 @@ button:hover{
   font-family: 'Circular Std Medium', sans-serif;
   font-size: 40px;
   position: relative;
-  margin-left: 20px;
   margin-top: 40px;
 
 }
 
 .btn{
   background-color: white;
-  margin-right: 0px;
+  margin-right: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
   margin-top: 20px;
   font-family: 'Circular Std Medium', sans-serif;
   font-size: 15px;
+  display: inline-block;
 }
 
 .btn:hover{
@@ -222,6 +221,36 @@ button:hover{
   font-family: 'Circular Std Light', sans-serif;
   font-size: 18px;
 }
+
+.btn-action{
+  width: 120px;
+  background-color: white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Circular Std Medium', sans-serif;
+  font-size: 15px;
+  display: inline-block;
+  transition: width 0.5s;
+}
+
+.btn-action:hover{
+  width: 150px;
+  justify-content: space-between;
+}
+
+.btn-action img{
+  width: 20px;
+  display: none;
+}
+
+.btn-action:hover img{
+  display: inline-block;
+}
+
+
+
+
 
 @media only screen and (max-width:400px){
   .claim{
