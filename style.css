@@ -79,14 +79,12 @@ button:hover{
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 100px;
+
 }
 
 .claim {
   font-family: 'Circular Std Medium', sans-serif;
-  font-size: 40px;
-  position: relative;
-  margin-top: 40px;
-
+  font-size: 37px;
 }
 
 .btn{
@@ -300,6 +298,11 @@ button:hover{
   width: 7%;
   margin: 1%;
   margin-bottom: 60px;
+}
+
+.footer-logo{
+  width: 40%;
+  cursor: pointer;
 }
 
 
