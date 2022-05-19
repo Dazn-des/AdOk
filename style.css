@@ -99,8 +99,29 @@ button:hover{
 
 .claim {
   font-family: 'Circular Std Medium', sans-serif;
-  font-size: 37px;
+  font-size: 45px;
+  position: absolute;
+  top: 20%;
+  left: 15px;
 }
+
+.banner-button{
+  background-color: white;
+  display: inline-block;
+  position: relative;
+
+
+}
+
+.button-icon{
+  width: 10%;
+}
+
+.banner-section{
+  position: relative;
+  display: inline-block;
+}
+
 
 .btn{
   background-color: white;
@@ -109,7 +130,7 @@ button:hover{
   margin-top: 20px;
   font-family: 'Circular Std Medium', sans-serif;
   font-size: 15px;
-  display: inline-block;
+  display: inline;
 }
 
 .btn:hover{
@@ -127,8 +148,11 @@ button:hover{
   float: right;
 }
 
+
 .img-fluid{
-  width:250%;
+  width: 80%;
+  float: right;
+  margin-right: -50px;
 }
 
 
@@ -265,6 +289,8 @@ button:hover{
   margin-top: 70px;
   margin-bottom: 70px;
   padding-left: 70px;
+  position: relative;
+  z-index: 1;
 }
 
 /*---------------discover-section--------------*/
@@ -311,13 +337,32 @@ button:hover{
 .footer-icon{
   width: 7%;
   margin: 1%;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .footer-logo{
   width: 40%;
   cursor: pointer;
 }
+
+/*---------------manifesto-section--------------*/
+
+/*---------------valori-section--------------*/
+
+#valori{
+  background-color: white;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.linea{
+  width: 80%;
+  margin-left: -70px;
+}
+
+
+
 
 @media only screen and (max-width:700px){
   .row{
