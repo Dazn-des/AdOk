@@ -109,8 +109,6 @@ button:hover{
   background-color: white;
   display: inline-block;
   position: relative;
-
-
 }
 
 .button-icon{
@@ -211,6 +209,8 @@ button:hover{
 .image-center{
   width: 100%;
   align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -359,8 +359,17 @@ button:hover{
 .linea{
   width: 80%;
   margin-left: -70px;
+  position: absolute;
+  z-index: 0;
 }
 
+.sottotitolo{
+  font-size: 23px;
+  font-family: 'Recoleta', sans-serif;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
 
 
 
