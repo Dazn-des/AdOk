@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Recoleta', sans-serif;
+  cursor: url("images/cursor.png"), auto;
+  cursor
 }
 
 
@@ -20,6 +22,10 @@ top: 0;
 left: 0;
 }
 
+.cursor {
+
+}
+
 /*---------------menu-section--------------*/
 
 button{
@@ -28,7 +34,7 @@ button{
   outline: 1px;
   color: black;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 13px;
   cursor: pointer;
   box-shadow: 2px 2px black;
 }
@@ -99,10 +105,10 @@ button:hover{
 
 .claim {
   font-family: 'Circular Std Medium', sans-serif;
-  font-size: 45px;
+  font-size: 38px;
   position: absolute;
-  top: 20%;
-  left: 15px;
+  top: 15%;
+
 }
 
 .banner-button{
@@ -207,9 +213,9 @@ button:hover{
 }
 
 .image-center{
-  width: 100%;
-  align-items: center;
+  width: 80%;
   position: relative;
+  align-items: center;
   z-index: 10;
 }
 
@@ -286,8 +292,8 @@ button:hover{
 }
 
 .col-md-6{
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding-left: 70px;
   position: relative;
   z-index: 1;
@@ -331,17 +337,17 @@ button:hover{
 }
 
 .footericon{
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .footer-icon{
-  width: 7%;
-  margin: 1%;
+  width: 4%;
+  margin: 0;
   margin-bottom: 20px;
 }
 
 .footer-logo{
-  width: 40%;
+  width: 20%;
   cursor: pointer;
 }
 
@@ -357,8 +363,8 @@ button:hover{
 }
 
 .linea{
-  width: 80%;
-  margin-left: -70px;
+  width: 65%;
+  margin-left: -10%;
   position: absolute;
   z-index: 0;
 }
@@ -371,9 +377,24 @@ button:hover{
   z-index: 10;
 }
 
+/*---------------vision-section--------------*/
+
+#vision{
+    background-color: #F4F4F4;
+    color: black;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+.vision-image{
+  width: 60%;
+  margin: 20px;
+}
 
 
-@media only screen and (max-width:700px){
+
+@media only screen and (max-width:500px){
   .row{
     flex-direction: column-column-reverse;
     margin: 50px 0;
