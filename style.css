@@ -25,6 +25,13 @@ left: 0;
 
 }
 
+.container, .container-fluid, .container-lg, .container-sm, .container-xl{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--bs-gutter-x,15px);
+    padding-right: var(--bs-gutter-x,15px);
+    width: 100%;
+}
 /*---------------menu-section--------------*/
 
 button{
@@ -65,6 +72,11 @@ button:hover{
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.navbar-collapse {
+
+  justify-content:center;
+    }
 
 .navbar-brand{
   height: 90px;
@@ -163,6 +175,13 @@ button:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--bs-gutter-x)*-.5);
+  margin-right: calc(var(--bs-gutter-x)*-.5);
+  margin-top: calc(var(--bs-gutter-y)*-1);
 }
 
 /*---------------function-section--------------*/
@@ -320,15 +339,13 @@ button:hover{
 #footer{
   background-color: #F23005;
   color: black;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 70px 20px 70px;
 }
 
 .footer-text{
-  font-family: 'Circular Std Light', sans-serif;
-  font-size: 15px;
+  font-family: 'Circular Std Bold', sans-serif;
+  font-size: 16px;
   color: white;
-
 }
 
 .col-md-auto{
@@ -336,18 +353,37 @@ button:hover{
 }
 
 .footericon{
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .footer-icon{
-  width: 4%;
+  width: 20px;
   margin: 0;
   margin-bottom: 20px;
 }
 
 .footer-logo{
-  width: 20%;
+  width: 120px;
   cursor: pointer;
+}
+
+.list-unstyled li{
+    font-family: 'Circular Std Light', sans-serif;
+    list-style: none;
+    padding-left: 0;
+}
+
+.col{
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+
+.footer-specs{
+    font-family: 'Circular Std', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding-top: 20px;
 }
 
 /*---------------manifesto-section--------------*/
@@ -398,12 +434,19 @@ button:hover{
     flex-direction: column-column-reverse;
     margin: 50px 0;
   }
+
+  .container, .container-lg {
+      max-width: 960px;
+
   .img-fluid{
     width: 100%;
-
   }
 
   .claim{
     flex-basis: 100%;
     margin-bottom: 50px;
+  }
+
+  .align-items-lg-start {
+      align-items: flex-start!important;
   }
