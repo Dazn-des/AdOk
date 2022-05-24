@@ -6,21 +6,6 @@
 }
 
 
-#mask {
-  background-color: #F23005;
-  stroke: white;
-  stroke-width: 5;
-  fill-opacity: 0;
-  z-index: 9999;
-}
-
-
-#innercircle {
-position: absolute;
-top: 0;
-left: 0;
-}
-
 .cursor {
 
 }
@@ -62,7 +47,6 @@ button:hover{
 }
 
 
-
 #nav-bar{
   position: sticky;
   top: 0;
@@ -75,15 +59,16 @@ button:hover{
   padding-right: 20px;
 }
 
+
 .navbar-brand{
   height: 90px;
 }
 
-.navbar-nav li
-{
+.navbar-nav li{
   text-decoration: none;
   color: black;
   font-size: 15px;
+
 }
 
 .navbar-nav li a{
@@ -95,6 +80,25 @@ button:hover{
 .navbar-nav li a:hover
 {
   color: #F23005;
+}
+
+
+navbar-collapse{
+  align-items: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center!important;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 9999;
+  transition: 0.5s;
+  padding-right: 40%;
 }
 
 
@@ -228,18 +232,49 @@ button:hover{
   display: inline-block;
 }
 
+.mano {
+  position: absolute;
+  z-index: 10;
+  width: 30%;
+}
+
+.lettera{
+  position: absolute;
+  z-index: 10;
+  width: 25%;
+  left: 70%;
+  top: 60%;
+}
+
+.biglietteria{
+  position: absolute;
+  z-index: 10;
+  width: 30%;
+  top: 50%;
+  left: 60%;
+}
+
+
+.function-list{
+  white-space: normal;
+  display: inline;
+  margin-left: 0 auto;
+}
+
 
 .function-list p{
   font-family: 'Circular Std Light', sans-serif;
-  position: absolute;
+  position: relative;
   z-index: 999;
   margin: 0 auto;
   left: 0;
   right: 0;
   top: 40%;
   text-align: center;
-  width: 60%;
+  width: 80%;
   padding: 20px;
+
+
 }
 
 
@@ -256,6 +291,7 @@ button:hover{
 .services-title{
   font-size: 32px;
   text-align: center;
+
 }
 
 .services-image{
@@ -268,7 +304,7 @@ button:hover{
 
 
 
-/*---------------services-section--------------*/
+/*---------------tools-section--------------*/
 
 
 #tools{
@@ -286,10 +322,11 @@ button:hover{
 .tools-text{
   font-family: 'Circular Std Light', sans-serif;
   font-size: 18px;
+
 }
 
 .btn-action{
-  width: 150px;
+  width: 160px;
   background-color: white;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -301,7 +338,7 @@ button:hover{
 }
 
 .btn-action:hover{
-  width: 160px;
+  width: 180px;
   justify-content: space-between;
 }
 
@@ -318,12 +355,12 @@ button:hover{
 .col-md-4{
   margin-top: 30px;
   margin-bottom: 30px;
-  padding-left: 70px;
   position: relative;
   z-index: 1;
   font-family: 'Circular Std Light', sans-serif;
   font-size: 18px;
   text-align: center;
+
 }
 
 /*---------------discover-section--------------*/
@@ -404,21 +441,24 @@ button:hover{
   color: black;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 50px;
 }
 
-.linea{
-  width: 65%;
-  margin-left: -10%;
-  position: absolute;
-  z-index: 0;
+.image-title{
+  width: 250px;
+  margin-top: 20px;
 }
 
-.sottotitolo{
-  font-size: 23px;
-  font-family: 'Recoleta', sans-serif;
-  text-align: center;
+.image-values{
+  width: 70%;
   position: relative;
+  text-align: left;
   z-index: 10;
+}
+
+.values-text{
+  font-family: 'Circular Std Light', sans-serif;
+  font-size: 18px;
 }
 
 /*---------------vision-section--------------*/
@@ -426,9 +466,9 @@ button:hover{
 #vision{
     background-color: #F4F4F4;
     color: black;
-    margin-bottom: 100px;
     padding-top: 40px;
     padding-bottom: 40px;
+      margin-bottom: 50px;
   }
 
 .vision-image{
@@ -436,6 +476,52 @@ button:hover{
   margin: 20px;
 }
 
+/*---------------mappa-section--------------*/
+
+#mappa{
+    color: black;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+
+  .mappa-image{
+    width: 80%;
+    position: relative;
+    text-align: left;
+    z-index: 10;
+  }
+
+
+/*---------------contatti-section--------------*/
+
+#contatti{
+    color: black;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+.contatti-image{
+  width: 80%;
+  position: relative;
+  z-index: 10;
+}
+
+/*---------------storie-section--------------*/
+
+#storie{
+    color: black;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+
+.storie-image:hover{
+  color: white;
+}
 
 
 
