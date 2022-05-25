@@ -37,8 +37,9 @@ button:hover{
 
 
 .logo{
-  width: 50%;
+  width: 120px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .menu{
@@ -68,13 +69,12 @@ button:hover{
   text-decoration: none;
   color: black;
   font-size: 15px;
-
 }
 
 .navbar-nav li a{
-  font-family: 'Circular Std Medium', sans-serif;
-  float: right;
-  text-align: left;
+  font-family: 'Circular Std Light', sans-serif;
+  float: center;
+  text-align: center;
 }
 
 .navbar-nav li a:hover
@@ -106,21 +106,34 @@ navbar-collapse{
 /*---------------banner-section--------------*/
 
 #banner {
-  background-color: #F4F4F4;
+  background-color: white;
   color: black;
   margin-left: 25px;
   margin-right: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
+.banner-section{
+  position: relative;
+  display: inline-block;
+}
+
 .claim {
-  font-family: 'Circular Std Medium', sans-serif;
+  font-family: 'Circular Std Light', sans-serif;
   font-size: 38px;
   position: absolute;
-  top: 15%;
+  top: 30%;
 
 }
+
+
+.img-fluid{
+  width: 200%;
+  float: right;
+
+}
+
 
 .banner-button{
   background-color: white;
@@ -132,10 +145,6 @@ navbar-collapse{
   width: 10%;
 }
 
-.banner-section{
-  position: relative;
-  display: inline-block;
-}
 
 
 .btn{
@@ -143,7 +152,7 @@ navbar-collapse{
   margin-right: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
-  font-family: 'Circular Std Medium', sans-serif;
+  font-family: 'Circular Std Book', sans-serif;
   font-size: 15px;
   display: inline;
 }
@@ -161,13 +170,6 @@ navbar-collapse{
   font-family: 'Circular Std Medium', sans-serif;
   font-size: 15px;
   float: right;
-}
-
-
-.img-fluid{
-  width: 80%;
-  float: right;
-  margin-right: -50px;
 }
 
 
@@ -207,7 +209,7 @@ navbar-collapse{
 }
 
 .claim-2{
-  font-family: 'Circular Std Medium', sans-serif;
+  font-family: 'Circular Std Light', sans-serif;
   font-size: 32px;
   flex-basis: 100%;
 }
@@ -399,13 +401,14 @@ navbar-collapse{
 }
 
 .footericon{
-  margin-left: 10px;
+  margin-left: 5px;
+
 }
 
 .footer-icon{
   width: 20px;
-  margin: 0;
   margin-bottom: 20px;
+  margin-right: 5px;
 }
 
 .footer-logo{
@@ -522,6 +525,25 @@ navbar-collapse{
 .storie-image:hover{
   color: white;
 }
+
+.storie-image{
+  width: 90%;
+  align-items: center;
+}
+
+<script>
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#firstLottie',
+  actions: [
+      {
+        visibility: [0,1],
+        type: 'seek',
+        frames: [0, 61],
+      },
+    ],
+});
+</script>
 
 
 
