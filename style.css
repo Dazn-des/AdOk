@@ -39,7 +39,7 @@ button:hover{
 .logo{
   width: 120px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .menu{
@@ -52,6 +52,7 @@ button:hover{
   position: sticky;
   top: 0;
   z-index: 100;
+  outline: 1px solid black;
 }
 
 .navbar{
@@ -83,55 +84,46 @@ button:hover{
 }
 
 
-navbar-collapse{
-  align-items: center;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center!important;
-  left: 0;
-  overflow-y: scroll;
-  position: fixed;
-  text-align: center;
-  top: 0;
-  width: 100vw;
-  min-height: 100vh;
-  z-index: 9999;
-  transition: 0.5s;
-  padding-right: 40%;
+navbar-collapse.show {
+    align-items: center;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center!important;
+    left: 0;
+    min-height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100vw;
+    z-index: 9999;
 }
-
 
 
 /*---------------banner-section--------------*/
 
 #banner {
+  height: 100vh;
   background-color: white;
-  color: black;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-bottom: 50px;
+  padding: 25px 25px 0px 25px;
   justify-content: center;
+  outline: 1px solid black;
 }
 
-.banner-section{
-  position: relative;
-  display: inline-block;
-}
 
 .claim {
   font-family: 'Circular Std Light', sans-serif;
   font-size: 38px;
-  position: absolute;
+  position: relative;
   top: 30%;
-
 }
 
 
 .img-fluid{
   width: 200%;
   float: right;
-
+  position: relative;
 }
 
 
@@ -210,7 +202,13 @@ navbar-collapse{
 
 .claim-2{
   font-family: 'Circular Std Light', sans-serif;
-  font-size: 32px;
+  font-size: 36px;
+  flex-basis: 100%;
+}
+
+.claim-3{
+  font-family: 'Circular Std Light', sans-serif;
+  font-size: 16px;
   flex-basis: 100%;
 }
 
@@ -234,27 +232,12 @@ navbar-collapse{
   display: inline-block;
 }
 
-.mano {
-  position: absolute;
+.number {
+  display: flex;
   z-index: 10;
-  width: 30%;
+  width: 70px;
 }
 
-.lettera{
-  position: absolute;
-  z-index: 10;
-  width: 25%;
-  left: 70%;
-  top: 60%;
-}
-
-.biglietteria{
-  position: absolute;
-  z-index: 10;
-  width: 30%;
-  top: 50%;
-  left: 60%;
-}
 
 
 .function-list{
@@ -303,7 +286,6 @@ navbar-collapse{
   margin-right: auto;
   text-align: center;
 }
-
 
 
 /*---------------tools-section--------------*/
@@ -560,11 +542,11 @@ LottieInteractivity.create({
 }
 
   .img-fluid{
-    width: 100%;
+    width: 100vw;
   }
 
   .claim{
-    flex-basis: 100%;
+    flex-basis: 300px;
     margin-bottom: 50px;
   }
 
