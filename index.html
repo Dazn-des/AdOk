@@ -25,11 +25,15 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <img src="images/icona_filtri_blk.png" class="menu">
         </button>
-        <div class="col-auto collapse navbar-collapse justify-content-end show" id="navbarText">
 
 
+        <div class="col-auto collapse navbar-collapse justify-content-end" id="navbarText">
 
-          <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+          <div class="col-auto close-button-container">
+            <button type="button" class="navbar-toggler" style="float: right;" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Close"><img src="images/icona_filtri_blk.png" class="menu"></button>
+          </div>
+
+          <ul class="navbar-nav  mb-sm-0">
             <li class="nav-item">
               <a class="nav-link" href="manifesto.html">Manifesto</a>
             </li>
@@ -42,10 +46,13 @@
             <li class="nav-item">
               <a class="nav-link" href="contatti.html">Contatti</a>
             </li>
+
+          <li> <button type="button" class="btn-nav">Accedi</button> </li>
           </ul>
-          <span class="navbar-text">
-            <button type="button">Accedi</button>
-          </span>
+
+
+
+
         </div>
       </div>
     </nav>
@@ -59,8 +66,9 @@
     <div class="row">
         <div class="col-lg-6">
           <p class="claim">Scopri il luogo digitale in cui gli <strong>artigiani</strong> del <br> territorio incontrano <br>le <strong>nuove generazioni</strong></p>
-          <div><button type="button" class="btn-banner">Sei un artigiano?</button>
-            <button type="button" class="btn-banner">Sei un cliente?</button></div>
+          <div><a href="#function-artigiano"><button type="button" class="btn-banner">Sei un artigiano?</button></a>
+            <a href="#function-cliente"><button type="button" class="btn-banner">Sei un cliente?</button></a>
+            </div>
         </div>
 
           <div class="col-lg-6">
@@ -72,7 +80,7 @@
   </section>
 
 
-<section id="function">
+<section id="function-artigiano">
   <div class="container">
     <div class="row">
   <div class="col-md-12" style="text-align: center;">
@@ -104,7 +112,90 @@
       <p>Con tutte le comodità di essere online.<br>Consegnerai il prodotto solo in bottega, a tutto il resto ci pensiamo noi.</p>
       </div>
     </div>
+  </div>
+  </div>
 
+  <div class="col-12"><div class="w-100 border-bottom border-black"></div></div>
+
+  <div class="row" style="top: 30px;">
+    <div class="col-md-12" style="text-align: center;">
+      <h1 class="claim-3">DOVE CI VEDIAMO</h1>
+      <h1 class="claim-2"><strong>Sempre con te, nella tua bottega</strong></h1>
+    </div>
+
+
+    <div class="col-lg-6">
+      <p class="claim-4">Al tuo fianco mentre lavori! <br>Con la nostra piattaforma non ti perderai più nulla di quello che succede
+nella tua bottega.</p>
+      <button type="button" class="btn-action">Entra in AdOk<img src="images/icona_freccia_w.png" class="menu"></button>
+  </div>
+  <div class="col-lg-6" >
+    <img src="images/computer.png" class="image-function" style="top: 30px;">
+  </div>
+
+  </div>
+  </div>
+</section>
+
+
+<section id="function-cliente">
+  <div class="container">
+    <div class="row">
+  <div class="col-md-12" style="text-align: center;">
+    <h1 class="claim-3">LA NOSTRA PROPOSTA PER I CLIENTI</h1>
+    <h1 class="claim-2"><strong>É fatto bene, è fatto AdOk</strong></h1>
+    <p class="claim-4">Scopri botteghe, prodotti ed esperienze unici sul territorio, tramite AdOk, creato su misura per te</p>
+  </div>
+
+  <div class="col-md-6" style="top: 10px;">
+    <div class="function-list">
+
+      <div class="d-md-inline-flex">
+      <img class="number" src="images/1c.png">
+      <p>  I tuoi gusti sono unici.<br>
+Non deve solo piacerti, può essere fatto
+apposta per te.</p>
+      </div>
+
+      <div class="d-sm-inline-flex">
+        <img class="number" src="images/2c.png">
+        <p>Non ci sono segreti.<br>
+Potrai toccare con mano l’artigianato, partecipando alle esperienze in bottega.
+</p>
+      </div>
+
+      <div class="d-md-inline-flex">
+      <img class="number" src="images/3c.png">
+      <p>Un’esperienza di acquisto su misura.<br>
+Ritira il prodotto direttamente dall’artigiano e assicurati che sia come lo desideravi.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6" >
+    <img src="images/percliente.png" class="image-function" style="top: 30px; width: 90%">
+  </div>
+
+  </div>
+
+  <div class="col-12"><div class="w-100 border-bottom border-black"></div></div>
+
+  <div class="row" style="top: 30px;">
+    <div class="col-md-12" style="text-align: center;">
+      <h1 class="claim-3">DOVE CI VEDIAMO</h1>
+      <h1 class="claim-2"><strong>Sempre con te, nella tua tasca</strong></h1>
+    </div>
+
+
+    <div class="col-lg-6">
+      <p class="claim-4">Segui la tua passione!<br>
+La nostra applicazione viene sempre
+in giro con te per aiutarti a trovare
+l’artigiano che cerchi.</p>
+      <button type="button" class="btn-action">Scarica l'app<img src="images/icona_freccia_w.png" class="menu"></button>
+  </div>
+  <div class="col-lg-6" >
+    <img src="images/telefono.png" class="image-function" style="top: 30px;">
   </div>
 
   </div>
@@ -112,83 +203,34 @@
 
   </div>
 </section>
+
 
 
 <section id="services">
   <div class="container">
     <div class="row">
-      <center> <div class="col-md-12"><p class="claim-2"> AdOk è il servizio per</p>
-      </div> </center>
+      <div class="col-md-12" style="text-align: center;">
+        <h1 class="claim-3">COSA FACCIAMO</h1>
+        <h1 class="claim-2"><strong>AdOk è il servizio per</strong></h1>
+      </div>
 
         <div class="col-md-4"><img src="images/scoprire.png" class="services-image">
-        <p class="services-title" style="text-align: center"><strong>Scoprire</strong></p>
+        <p class="services-title">Scoprire</p>
         Scopri nuove realtà artigianali, dietro l’angolo.</div>
 
         <div class="col-md-4"><img src="images/trovare.png" class="services-image">
-        <p class="services-title" style="text-align: center"><strong>Trovare</strong></p>
+        <p class="services-title">Trovare</p>
         Sai già cosa cerchi, trova la bottega perfetta per te.</div>
 
         <div class="col-md-4"><img src="images/comprare.png" class="services-image">
-        <p class="services-title" style="text-align: center"><strong>Comprare</strong></p>
+        <p class="services-title">Comprare</p>
         Lo realizziamo insieme, ma è tutto tuo.</div>
 
-    <div> <center> <button class="btn" style="justify: ;">
-      <a href="#tools"><img src="images/icona_V_blk.png" class="menu"></a></button> </center>
-    </div>
 
 </div>
 </div>
 </section>
 
-<section id="tools">
-  <div class="container">
-    <div class="row">
-      <center> <div class="col-md-12"><p class="claim-2"> Sempre con te, ad ogni tuo bisogno</p>
-      </div> </center>
-
-
-      <div class="col-md-6"><img src="images/telefono.png" class="image-center"></div>
-      <div class="col-md-6">
-        <p class="tools-title"><strong>Viene in giro con te</strong></p>
-        <p class="tools-text">Su <strong>smartphone</strong>, per trovare comodamente quello che cerchi.</p>
-        <button type="button" class="btn-action">Scarica l'app<img src="images/icona_freccia_blk.png" class="menu"></button>
-      </div>
-
-
-      <div class="col-md-6">
-        <p class="tools-title"><strong>Perchè tu non ti perda nulla</strong></p>
-        <p class="tools-text">Su <strong>tablet</strong>, se gli appuntamenti iniziano a diventare tanti.</p>
-        <button type="button" class="btn-action">Vai alla webapp<img src="images/icona_freccia_blk.png" class="menu"></button>
-      </div>
-      <div class="col-md-6"><img src="images/tablet.png" class="image-center" ></div>
-
-
-      <div class="col-md-6"><img src="images/computer.png" class="image-center" ></div>
-      <div class="col-md-6">
-        <p class="tools-title"><strong>Anche sui grandi schermi</strong></p>
-        <p class="tools-text">Su <strong>pc</strong>, per lavorare meglio.</p>
-        <button type="button" class="btn-action">Entra in AdOk<img src="images/icona_freccia_blk.png" class="menu"></button>
-      </div>
-
-
-</div>
-</div>
-</section>
-
-<section id="discover">
-  <div class="container">
-    <div class="row">
-      <center> <div class="col-md-12"><p class="claim-2"> Scopri anche tu cosa AdOk può offrirti!</p>
-      </div> </center>
-
-      <div class="col-md-12"><center>
-        <button type="button" class="btn-discover">Registrati</button>
-        <button type="button" class="btn-discover">Accedi</button>
-      </center></div>
-
-</div>
-</div>
-</section>
 
 
 <section id="footer">
