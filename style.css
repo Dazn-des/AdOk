@@ -46,6 +46,7 @@ button{
   font-family: 'Circular Std Light', sans-serif;
   font-size: 15px;
   display: inline;
+  z-index: 10;
 }
 
 button:hover{
@@ -101,8 +102,8 @@ button:hover{
 .navbar-nav li a:hover
 {
   color: #F23005;
+  text-decoration: line-through;
 }
-
 
 
 .navbar-collapse{
@@ -136,6 +137,17 @@ button:hover{
 
 }
 
+.collapse {
+  &:not(.show) {
+    display: none;
+  }
+}
+
+.navbar-toggler {
+    transition: box-shadow .0s ease-in-out;
+}
+
+
 .btn-nav{
   float: center;
   font-family: 'circular std light';
@@ -149,6 +161,11 @@ button:hover{
   padding: 25px 25px 0px 25px;
   justify-content: center;
   outline: 1px solid black;
+  background: url("images/bg.png");
+  background-attachment: fixed;
+   background-origin: content-box;
+   background-repeat: no-repeat;
+   background-size: 100vw;
 }
 
 
@@ -165,10 +182,12 @@ button:hover{
   float: center;
   position: relative;
   top: 30px;
+
 }
 
 #firstLottie{
   align-items: center;
+  width: 100%;
 }
 
 .banner-button{
@@ -185,7 +204,6 @@ button:hover{
 .btn-banner{
   margin-right: 20px;
   margin-top: 10px;
-
 }
 
 
@@ -199,8 +217,8 @@ button:hover{
 #function-cliente{
   background-color: #F6F6F6;
   margin-top: 70px;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 70px;
+  padding-bottom: 70px;
   outline: 1px solid black;
 }
 
@@ -248,6 +266,13 @@ button:hover{
   z-index: 10;
 }
 
+
+.effect{
+  margin: auto;
+  z-index: -10;
+}
+
+
 .bg{
   position: relative;
   text-align: center;
@@ -282,7 +307,6 @@ button:hover{
   text-align: left;
   padding: 20px;
 }
-
 
 
 
@@ -335,7 +359,7 @@ button:hover{
 }
 
 .btn-action{
-  width: 150px;
+  width: 160px;
   background-color: white;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -468,6 +492,7 @@ button:hover{
 .values-text{
   font-family: 'Circular Std Light', sans-serif;
   font-size: 18px;
+  text-align: left;
 }
 
 /*---------------vision-section--------------*/
@@ -481,8 +506,12 @@ button:hover{
   }
 
 .vision-image{
-  width: 60%;
+  width: 70%;
   margin: 20px;
+}
+
+.image-man{
+  width: 70%;
 }
 
 /*---------------mappa-section--------------*/
@@ -496,7 +525,7 @@ button:hover{
 
 
   .mappa-image{
-    width: 80%;
+    width: 100%;
     position: relative;
     text-align: left;
     z-index: 10;
@@ -553,11 +582,13 @@ LottieInteractivity.create({
 
 
 
-@media screen and (min-width: 601px) {
+
+@media screen and (min-width: 801px) {
 }
 
 
-@media screen and (max-width:600px){
+
+@media screen and (max-width:800px){
 
   #nav-bar {
       position: sticky;
@@ -566,18 +597,21 @@ LottieInteractivity.create({
       outline: 1px solid black;
     }
 
+  #banner{
+    background: none;
+  }
   #footer{
     padding: 0 0 0 0;
   }
 
-  .row{
-    flex-direction: column-column-reverse;
-  }
 
   .container, .container-lg {
       max-width: 960px;
-      margin: 50px 0;
 }
+
+  .col-md-6{
+    width: 100vw;
+  }
 
   .claim{
     top: 0px;
@@ -586,20 +620,50 @@ LottieInteractivity.create({
 
   #firstLottie{
     align-items: center;
-  }
-
-  .function-list{
 
   }
+
+  .image-banner{
+  width: 100vw;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+ .image-function{
+   width: 100%;
+ }
 
   .function-list p{
     text-align: center;
   }
 
-
-
-
-
   .col-lg-6{
     text-align: center;
+  }
+
+#function-cliente{
+  flex-direction: column-reverse;
+}
+
+.btn-action{
+
+}
+
+.values-text{
+text-align: center;
+}
+
+.vision-image{
+  width: 90%;
+}
+
+.image-man{
+  width: 50%;
+}
+
+  @media screen and (max-width:380px){
+  .claim{
+    top: 0px;
+    font-size: 26px;
+  }
   }
