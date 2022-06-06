@@ -22,12 +22,27 @@ a{
   margin-top: calc(var(--bs-gutter-y)*-1);
 }
 
-.scroller {
-  width: 300px;
-  height: 100px;
-  overflow-y: scroll;
-  scrollbar-width: thin;
+/*---------------scroller-section--------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:white url('images/scrollbar.png') no-repeat;
+  background-size: 40px;
+  border-radius: 10px;
+  background-position: center;
+  display: block;
+}
+
+/*---------------scroller-section--------------*/
 
 .cursor {
 
@@ -179,7 +194,6 @@ button:hover{
   font-family: 'Circular Std Light', sans-serif;
   font-size: 50px;
   position: relative;
-
 }
 
 
@@ -217,13 +231,13 @@ button:hover{
 /*---------------function-section--------------*/
 
 #function-artigiano{
-  margin-top: 70px;
+  padding-top: 100px;
 }
 
 #function-cliente{
   background-color: #F6F6F6;
   margin-top: 70px;
-  padding-top: 70px;
+  padding-top: 100px;
   padding-bottom: 70px;
   outline: 1px solid black;
 }
@@ -425,7 +439,6 @@ button:hover{
 
 .footericon{
   margin-left: 5px;
-
 }
 
 .footer-icon{
@@ -530,6 +543,7 @@ button:hover{
   top: 0;
   left: 0;
   object-fit: cover;
+
 }
 
 
@@ -601,14 +615,15 @@ button:hover{
   padding-right: 0;
 }
 
+scrolling-wrapper::-webkit-scrollbar{
+   display: none;
+}
   .scrolling-wrapper{
-  	overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
   }
 
-  scrolling-wrapper::-webkit-scrollbar{
-     display: none;
-  }
+
 
   .card-block{
     padding-top: 30px;
@@ -628,8 +643,8 @@ button:hover{
   }
 
   .card-1{
-	background-color: #ffffff;
-}
+  background-color: #ffffff;
+  }
 
   .card-2{
   background-color: #ffffff;
@@ -646,10 +661,26 @@ button:hover{
   padding-top: 40px;
 }
 
-/*---------------funzioni-section--------------*/
+/*---------------servizio-section--------------*/
 
+#processo{
+  color: black;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
 
+#processo-clienti{
+  color: black;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: #F4F4F4;
+  outline: 1px solid black;
+}
 
+.carousel{
+  height: 80%;
+  font-family:'Circular Std Light', sans-serif;
+}
 
 
 
