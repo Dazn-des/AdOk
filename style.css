@@ -684,15 +684,16 @@ LottieInteractivity.create({
       top: 0;
       z-index: 100;
       outline: 1px solid black;
+      width: 100vw;
+      overflow-y: hidden;
   }
 
 
   nav ul {
-    position: fixed;
     width: 100vw;
     height: 100vh;
     background: white;
-    background-image: url("images/bg_v.png");
+    background-image: url("images/nav_bg.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
