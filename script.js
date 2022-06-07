@@ -9,3 +9,13 @@ function parallax(e){
     layer.style.transform = `translateX(${x}px) translateY(${y}px)`
   })
 }
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
