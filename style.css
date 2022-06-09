@@ -3,7 +3,6 @@
   padding: 0;
   font-family: 'Recoleta', sans-serif;
   cursor: url("images/x.png"), auto;
-
 }
 
 a{
@@ -23,10 +22,76 @@ a{
   margin-top: calc(var(--bs-gutter-y)*-1);
 }
 
+#btn-back-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: none;
+z-index: 100;
+}
+
+/*---------------font-section--------------*/
+
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+@font-face {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 450;
+    src: local('Circular Std'), url('https://fonts.cdnfonts.com/s/15011/CircularStd-Book.woff') format('woff');
+}
+@font-face {
+    font-family: 'Circular Std';
+    font-style: italic;
+    font-weight: 450;
+    src: local('Circular Std'), url('https://fonts.cdnfonts.com/s/15011/CircularStd-BookItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Circular Std'), url('https://fonts.cdnfonts.com/s/15011/CircularStd-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Circular Std';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Circular Std'), url('https://fonts.cdnfonts.com/s/15011/CircularStd-MediumItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Circular Std'), url('https://fonts.cdnfonts.com/s/15011/CircularStd-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Circular Std';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Circular Std'), url('https://fonts.cdnfonts.com/s/15011/CircularStd-BoldItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Circular Std'), url('https://fonts.cdnfonts.com/s/15011/CircularStd-Black.woff') format('woff');
+}
+@font-face {
+    font-family: 'Circular Std';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Circular Std'), url('https://fonts.cdnfonts.com/s/15011/CircularStd-BlackItalic.woff') format('woff');
+}
+
+@import url(//db.onlinewebfonts.com/c/67415ab41a7350f81536b69763e6d031?family=Recoleta-Regular);
+
+@font-face {font-family: "Recoleta-Regular"; src: url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.eot"); src: url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.woff") format("woff"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.svg#Recoleta-Regular") format("svg"); }
+
 /*---------------scroller-section--------------*/
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
+
 }
 
 /* Track */
@@ -43,7 +108,7 @@ a{
   display: block;
 }
 
-/*---------------scroller-section--------------*/
+/*---------------cursor-section--------------*/
 
 .cursor {
 
@@ -118,6 +183,10 @@ nav ul li {
   color: #F23005;
 }
 
+.nav-accedi:hover{
+  color: black;
+}
+
 .logo{
   width: 90px;
   cursor: pointer;
@@ -146,6 +215,8 @@ nav ul li {
   background-repeat: no-repeat;
   background-size: 100vw;
 }
+
+
 
 .bg{
   position: relative;
@@ -197,13 +268,13 @@ nav ul li {
 /*---------------function-section--------------*/
 
 #function-artigiano{
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 #function-cliente{
   background-color: #F6F6F6;
   margin-top: 70px;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 70px;
   outline: 1px solid black;
 }
@@ -326,26 +397,8 @@ nav ul li {
 }
 
 
-/*---------------tools-section--------------*/
 
-
-#tools{
-  background-color: #F4F4F4;
-  color: black;
-  margin-bottom: 100px;
-  padding-top: 40px;
-}
-
-.tools-title{
-  font-family: 'Recoleta';
-  font-size: 32px;
-}
-
-.tools-text{
-  font-family: 'Circular Std Light', sans-serif;
-  font-size: 18px;
-
-}
+/*---------------??-section--------------*/
 
 .btn-action{
   width: 160px;
@@ -381,7 +434,6 @@ nav ul li {
   font-family: 'Circular Std Light', sans-serif;
   font-size: 18px;
   text-align: center;
-
 }
 
 /*---------------footer-section--------------*/
@@ -443,7 +495,7 @@ nav ul li {
 #valori{
   background-color: white;
   color: black;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
   margin-bottom: 50px;
 
@@ -454,12 +506,6 @@ nav ul li {
   margin-top: 20px;
 }
 
-.image-values{
-  width: 70%;
-  position: relative;
-  text-align: left;
-  z-index: 10;
-}
 
 .values-text{
   font-family: 'Circular Std Light', sans-serif;
@@ -468,7 +514,7 @@ nav ul li {
 }
 
 .image-valori{
-  width: 70%;
+  width: 100%;
 }
 
 /*---------------vision-section--------------*/
@@ -476,39 +522,29 @@ nav ul li {
 #vision{
     background-color: #F4F4F4;
     color: black;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 40px;
-    margin-bottom: 50px;
     outline: 1px solid black;
   }
 
-.vision-image{
-  width: 70%;
-  margin: 20px;
+.image-vision{
+  display: none;
 }
 
-.image-man{
-  width: 70%;
-}
 
-.container-vision{
+
+#parallax {
   position: relative;
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.container-vision img{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-
+  background-image:
+  url('images/obj1.png'),
+  url('images/obj2.png'),
+  url('images/obj3.png'),
+  url('images/obj4.png'),
+  url('images/bg-vision.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -518,8 +554,7 @@ nav ul li {
 #mappa{
     color: black;
     margin-bottom: 100px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
   }
 
 
@@ -546,62 +581,71 @@ nav ul li {
 
 #contatti{
     color: black;
-    margin-bottom: 100px;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
 
-.contatti-image{
-  width: 80%;
-  position: relative;
-  z-index: 10;
+.update-image{
+  width: 50vw;
 }
+
+.tools-text{
+  font-family: 'Circular Std Light', sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+#update{
+  color: black;
+  margin-bottom: 90px;
+}
+
 
 /*---------------storie-section--------------*/
 
 #storie{
     color: black;
-    margin-bottom: 40px;
     padding-top: 40px;
   }
 
 #storie-artigiani{
   margin-bottom: 40px;
+  padding-top: 40px;
 }
 
 #storie-clienti{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #F4F4F4;
   outline: 1px solid black;
-
 }
 
-.container-fluid.storie{
+
+.container-fluid storie{
+  width: 100%;
   margin-top: 50px;
-  padding-left: 0;
-  padding-right: 0;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 
   .scrolling-wrapper{
     overflow-x: scroll;
-    overflow-y: hidden;
-
   }
 
-  scrolling-wrapper::-webkit-scrollbar{
+  .scrolling-wrapper::-webkit-scrollbar{
      display: none;
   }
 
   .card-block{
     padding-top: 30px;
-  	height: 400px;
+  	height: 430px;
   	border: none;
   	background-position: center;
   	background-size: cover;
   	transition: all 0.2s ease-in-out !important;
   	border-radius: 13px;
-    outline: 1px solid black;
 
   }
 
@@ -612,10 +656,12 @@ nav ul li {
 
   .card-1{
   background-color: #ffffff;
+  box-shadow: 0px 0px 10px #C1C1C1;
   }
 
   .card-2{
   background-color: #ffffff;
+  box-shadow: 0px 0px 10px #C1C1C1;
   }
 
 .storie-image{
@@ -638,6 +684,7 @@ nav ul li {
 }
 
 #processo-clienti{
+  position: static;
   color: black;
   padding-bottom: 40px;
   padding-top: 40px;
@@ -645,29 +692,13 @@ nav ul li {
   outline: 1px solid black;
 }
 
-.carousel{
-  height: 80%;
-  font-family:'Circular Std Light', sans-serif;
-}
 
 
 
 
 
 
-<script>
-LottieInteractivity.create({
-  mode: 'scroll',
-  player: '#firstLottie',
-  actions: [
-      {
-        visibility: [0,1],
-        type: 'seek',
-        frames: [0, 61],
-      },
-    ],
-});
-</script>
+
 
 
 
@@ -677,7 +708,7 @@ LottieInteractivity.create({
 
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:767px) {
 
   #nav-bar {
       position: sticky;
@@ -685,22 +716,29 @@ LottieInteractivity.create({
       z-index: 100;
       outline: 1px solid black;
       width: 100vw;
-      overflow-y: hidden;
+      overflow: hidden;
+
   }
 
+  .navbar{
+
+  }
+
+  .navbar.container-fluid{
+  }
 
   nav ul {
     width: 100vw;
     height: 100vh;
-    background: white;
-    background-image: url("images/nav_bg.png");
+    text-align: center;
+    padding-right: 25vw;
+    padding-top: 12vh;
+    background: url("images/nav_bg.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center;
-    padding-right: 25vw;
-    padding-top: 12vh;
+    background-color: white;
   }
 
   nav ul li {
@@ -769,7 +807,15 @@ LottieInteractivity.create({
   .image-banner{
   width: 100vw;
   padding-right: 30px;
-  padding-top: 30px;
+
+  }
+
+  #function-artigiano{
+    padding-top: 100px;
+  }
+
+  #function-cliente{
+    padding-top:100px;
   }
 
  .image-function{
@@ -794,17 +840,13 @@ LottieInteractivity.create({
     margin-right: 0;
   }
 
-
   .values-text{
   text-align: center;
   }
 
-  .vision-image{
-    width: 90%;
-  }
-
-  .image-man{
-    width: 50%;
+  #parallax{
+    background-size: contain;
+    height: 30vh;
   }
 
   .row.team{
@@ -817,6 +859,10 @@ LottieInteractivity.create({
     flex: auto;
   }
 
+.tools-text{
+  text-align: center;
+}
+
 
   @media screen and (max-width:380px){
   .claim{
@@ -826,7 +872,17 @@ LottieInteractivity.create({
   }
 
 
-  @media only screen and (min-height: 1023px) {
+  @media only screen and (min-height: 1020px) {
+
+    #banner{
+      background: url("images/bg_v.png");
+      background-size: 100vh;
+      background-attachment: fixed;
+      background-origin: content-box;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
       .image-valori{
       width: 50%;
       }
@@ -834,4 +890,8 @@ LottieInteractivity.create({
       .image-function{
       width: 30%;
       }
+
+
+
+
   }
