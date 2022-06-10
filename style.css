@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Recoleta', sans-serif;
+  font-family: 'Recoleta Alt Bold', sans-serif;
   cursor: url("images/x.png"), auto;
 }
 
@@ -87,8 +87,8 @@ z-index: 100;
 @font-face {font-family: "Recoleta-Regular"; src: url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.eot"); src: url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.woff") format("woff"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.svg#Recoleta-Regular") format("svg"); }
 
 @font-face {
-  font-family: 'Recoleta Alt';
-  src: url('font/NeueMachina-Medium.otf') format('woff2');
+  font-family: 'Recoleta Alt Bold';
+  src: url('font/Recoleta Alt Bold.otf') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
