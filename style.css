@@ -86,6 +86,15 @@ z-index: 100;
 
 @font-face {font-family: "Recoleta-Regular"; src: url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.eot"); src: url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.woff") format("woff"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.svg#Recoleta-Regular") format("svg"); }
 
+@font-face {
+  font-family: 'Recoleta Alt';
+  src: url('font/NeueMachina-Medium.otf') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /*---------------scroller-section--------------*/
 
 /* width */
@@ -174,7 +183,7 @@ nav ul li {
 
  .nav-link:hover{
   color: #F23005;
-  text-decoration: line-through;
+  text-decoration: underline;
 }
 
 .nav-accedi{
@@ -381,10 +390,10 @@ nav ul li {
 }
 
 .services-title{
-  font-family: 'circular Std Light';
-  font-size: 32px;
+  font-family: 'Circular Std Medium';
+  font-size: 22px;
   text-align: center;
-  top
+  margin-top: 20px;
 
 }
 
@@ -652,16 +661,15 @@ nav ul li {
   .card-block:hover{
   		transform: translateY(-5px);
   		box-shadow: none;
+      box-shadow: 0px 0px 10px #C1C1C1;
   }
 
   .card-1{
   background-color: #ffffff;
-  box-shadow: 0px 0px 10px #C1C1C1;
   }
 
   .card-2{
   background-color: #ffffff;
-  box-shadow: 0px 0px 10px #C1C1C1;
   }
 
 .storie-image{
@@ -693,7 +701,9 @@ nav ul li {
 }
 
 
-
+.carousel-item{
+  height: 65vh;
+}
 
 
 
@@ -859,9 +869,13 @@ nav ul li {
     flex: auto;
   }
 
-.tools-text{
-  text-align: center;
-}
+  .tools-text{
+    text-align: center;
+  }
+
+  .carousel-item{
+    height: 30vh;
+  }
 
 
   @media screen and (max-width:380px){
