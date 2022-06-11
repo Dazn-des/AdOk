@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Recoleta Alt Bold', sans-serif;
+  font-family: 'Circular Std Light', sans-serif;
   cursor: url("images/x.png"), auto;
 }
 
@@ -82,10 +82,6 @@ z-index: 100;
     src: local('Circular Std'), url('https://fonts.cdnfonts.com/s/15011/CircularStd-BlackItalic.woff') format('woff');
 }
 
-@import url(//db.onlinewebfonts.com/c/67415ab41a7350f81536b69763e6d031?family=Recoleta-Regular);
-
-@font-face {font-family: "Recoleta-Regular"; src: url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.eot"); src: url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.woff") format("woff"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.svg#Recoleta-Regular") format("svg"); }
-
 @font-face {
   font-family: 'Recoleta Alt Bold';
   src: url('font/Recoleta Alt Bold.otf') format('woff2');
@@ -100,22 +96,25 @@ z-index: 100;
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: white;
+  background: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:white url('images/scrollbar.png') no-repeat;
+  background: #F23005;
   background-size: 40px;
   border-radius: 10px;
   background-position: center;
   display: block;
 }
+
+
 
 /*---------------cursor-section--------------*/
 
@@ -137,7 +136,7 @@ button{
   padding: 10px 10px;
   outline: 1px solid black;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
   font-family: 'Circular Std Light', sans-serif;
   font-size: 15px;
@@ -267,11 +266,6 @@ nav ul li {
 }
 
 
-.btn-banner{
-  margin-right: 20px;
-  margin-top: 10px;
-}
-
 
 
 /*---------------function-section--------------*/
@@ -288,6 +282,7 @@ nav ul li {
   outline: 1px solid black;
 }
 
+
 .w-100{
   margin-top: 30px;
   margin-bottom: 30px;
@@ -303,7 +298,7 @@ nav ul li {
 }
 
 .claim-2{
-  font-family: 'Circular Std Light', sans-serif;
+  font-family: 'Recoleta Alt Bold', sans-serif;
   font-size: 36px;
   flex-basis: 100%;
 }
@@ -390,11 +385,11 @@ nav ul li {
 }
 
 .services-title{
-  font-family: 'Circular Std Medium';
+  font-family: 'Circular Std Medium', sans-serif;
   font-size: 22px;
   text-align: center;
   margin-top: 20px;
-
+  margin-bottom: 0;
 }
 
 .services-image{
@@ -405,7 +400,15 @@ nav ul li {
   text-align: center;
 }
 
+/*---------------video-section--------------*/
 
+#video{
+text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
 
 /*---------------??-section--------------*/
 
@@ -541,7 +544,6 @@ nav ul li {
 }
 
 
-
 #parallax {
   position: relative;
   width: 100%;
@@ -568,7 +570,7 @@ nav ul li {
 
 
   .mappa-image{
-    width: 100%;
+    width: 70%;
     position: relative;
     text-align: left;
     z-index: 10;
@@ -578,13 +580,41 @@ nav ul li {
       color: black;
       margin-bottom: 100px;
       padding-top: 40px;
-
     }
+
+
 
 .image-team{
   width: 100%;
   margin-top: 20px;
+  display: block;
 }
+
+.image-hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+
+.col:hover .image-hover{
+  opacity: 1;
+}
+
+.col:hover .image-team{
+  opacity: 0;
+}
+
+.team-text{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
 
 /*---------------contatti-section--------------*/
 
@@ -639,37 +669,38 @@ nav ul li {
 }
 
 
-  .scrolling-wrapper{
-    overflow-x: scroll;
-  }
+.scrolling-wrapper{
+  overflow-x: scroll;
+}
 
-  .scrolling-wrapper::-webkit-scrollbar{
-     display: none;
-  }
+.scrolling-wrapper::-webkit-scrollbar{
 
-  .card-block{
-    padding-top: 30px;
-  	height: 430px;
-  	border: none;
-  	background-position: center;
-  	background-size: cover;
-  	transition: all 0.2s ease-in-out !important;
-  	border-radius: 13px;
+}
 
-  }
 
-  .card-block:hover{
-  		transform: translateY(-5px);
-  		box-shadow: none;
-      box-shadow: 0px 0px 10px #C1C1C1;
-  }
+.card-block{
+  padding-top: 30px;
+	height: 430px;
+	border: none;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.2s ease-in-out !important;
+	border-radius: 13px;
 
-  .card-1{
-  background-color: #ffffff;
-  }
+}
 
-  .card-2{
-  background-color: #ffffff;
+card-block:hover{
+		transform: translateY(-5px);
+		box-shadow: none;
+    box-shadow: 0px 0px 10px #C1C1C1;
+}
+
+.card-1{
+background-color: #F4F4F4;
+}
+
+.card-2{
+background-color: #ffffff;
   }
 
 .storie-image{
@@ -679,8 +710,8 @@ nav ul li {
 
 #community{
   color: black;
-  margin-bottom: 40px;
-  padding-top: 40px;
+  margin-bottom: 100px;
+  padding-top: 100px;
 }
 
 /*---------------servizio-section--------------*/
@@ -703,9 +734,12 @@ nav ul li {
 
 .carousel-item{
   height: 65vh;
+  font-family: 'Circular Std Light', sans-serif;
 }
 
+#myCarousel{
 
+}
 
 
 
@@ -817,7 +851,6 @@ nav ul li {
   .image-banner{
   width: 100vw;
   padding-right: 30px;
-
   }
 
   #function-artigiano{
@@ -861,6 +894,10 @@ nav ul li {
 
   .row.team{
     flex-direction: column;
+  }
+
+  .mappa-image{
+    width: 80vw;
   }
 
   .image-team{
