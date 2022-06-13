@@ -84,6 +84,14 @@ z-index: 100;
 }
 
 @font-face {
+  font-family: 'Circular Std';
+  src: url('font/CircularStd-Light.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: 'Recoleta Alt Bold';
   src: url('font/Recoleta Alt Bold.otf') format('woff2');
   font-weight: bold;
@@ -779,6 +787,7 @@ background-color: #ffffff;
 
   .btn{
     font-size: 13px;
+    display: inline-block;
   }
 
   #nav-bar {
@@ -835,7 +844,7 @@ background-color: #ffffff;
 
   #banner{
     background-image: url("images/bg_v.png");
-    background-size: 50%;
+    background-size: contain;
     background-attachment: fixed;
     background-origin: content-box;
     background-repeat: no-repeat;
