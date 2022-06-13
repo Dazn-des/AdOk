@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="http://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
   </head>
@@ -20,46 +20,44 @@
       <i> <img src="images/freccia_up.png" class="menu" style="cursor: pointer;"> </i> </span>
     </div>
 
+    <section id="nav-bar">
+      <nav class="navbar py-0 navbar-expand-md navbar-light">
+      <div class="container-fluid navbar-background">
 
-        <section id="nav-bar">
-          <nav class="navbar py-0 navbar-expand-md navbar-light">
-          <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+         <img src="images/logo.svg" class="logo">
+       </a>
 
-            <a class="navbar-brand" href="index.html">
-             <img src="images/logo.svg" class="logo">
-           </a>
-
-            <label class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
-              <img src="images/icona_filtri_blk.png" class="menu">
-            </label>
+        <label class="navbar-toggler collapsed btn btn-outline-light" data-bs-toggle="collapse" data-bs-target="#navbarText">
+          <img src="images/icona_filtri_blk.png" class="menu">
+        </label>
 
 
-            <div class="col-auto collapse navbar-collapse justify-content-end" id="navbarText">
+        <div class="col-auto collapse navbar-collapse justify-content-end" id="navbarText">
 
-              <ul>
-                <li class="nav-item">
-                  <a class="nav-link" href="manifesto.html">Manifesto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="storie.html">Dicono di noi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="servizio.html">Servizio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contatti.html">Contatti</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-accedi" href="#">Accedi</a>
-                </li>
-              </ul>
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="manifesto.html">Manifesto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="storie.html">Dicono di noi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servizio.html">Servizio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatti.html">Contatti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-accedi" href="#">Accedi</a>
+            </li>
+          </ul>
 
-            </div>
-            </div>
-          </nav>
+        </div>
+        </div>
+      </nav>
 
-        </section>
-
+    </section>
 
 
 <section id="valori">
@@ -128,7 +126,7 @@ come mezzo di espressione personale e simbolo di un consumo sostenibile. </p>
 
 
 
-      <section id="mappa">
+      <section id="mappa"  data-aos="fade-right" data-aos-duration="1000">
     <div class="container">
       <div class="row">
 
@@ -146,7 +144,7 @@ come mezzo di espressione personale e simbolo di un consumo sostenibile. </p>
 
 
 
-  <section id="team">
+  <section id="team"  data-aos="fade-left" data-aos-duration="1000">
     <div class="container">
       <div class="row">
 
@@ -270,6 +268,7 @@ come mezzo di espressione personale e simbolo di un consumo sostenibile. </p>
   </div>
 </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

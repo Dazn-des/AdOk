@@ -54,3 +54,6 @@ document.documentElement.scrollTop = 0;
 }
 
 //Bottone che torna in alto
+
+
+AOS.init();
