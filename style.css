@@ -798,7 +798,7 @@ background-color: #ffffff;
     padding-right: 25vw;
     padding-top: 12vh;
     background: url("images/nav_bg.png");
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -811,7 +811,7 @@ background-color: #ffffff;
     text-align: center;
     flex-direction: column;
     z-index: 100;
-    line-height: 10vh;
+    line-height: 8vh;
   }
 
 
@@ -829,13 +829,13 @@ background-color: #ffffff;
 
   .nav-link:hover{
     color: #F23005;
-    text-decoration: line-through;
+    text-decoration: underline;
   }
 
 
   #banner{
     background: url("images/bg_v.png");
-    background-size: cover;
+    background-size: 100% 100%;
     background-attachment: fixed;
     background-origin: content-box;
     background-repeat: no-repeat;
@@ -953,7 +953,8 @@ background-color: #ffffff;
   }
 
   .nav-link, .nav-accedi{
-    font-family: 'Circular Std Medium', sans-serif;
+    margin-top: 0px;
+    font-family: 'Circular Std Bold', sans-serif;
     font-size: 23px;
   }
 
