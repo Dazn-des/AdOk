@@ -834,8 +834,8 @@ background-color: #ffffff;
 
 
   #banner{
-    background: url("images/bg_v.png");
-    background-size: 100% 100%;
+    background-image: url("images/bg_v.png");
+    background-size: 50%;
     background-attachment: fixed;
     background-origin: content-box;
     background-repeat: no-repeat;
@@ -949,7 +949,7 @@ background-color: #ffffff;
   @media screen and (max-width:380px){
   .claim{
     top: 0px;
-    font-size: 20px;
+    font-size: 23px;
   }
 
   .nav-link, .nav-accedi{
