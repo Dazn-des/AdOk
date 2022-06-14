@@ -46,6 +46,20 @@ z-index: 100;
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Circular Std Bold';
+  src: url('font/CircularStd-Bold.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std Medium';
+  src: url('font/CircularStd-Medium.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 @font-face {
@@ -623,6 +637,11 @@ text-align: center;
   margin-bottom: 90px;
 }
 
+.image-contatti{
+  position: relative;
+  text-align: right;
+  z-index: 10;
+}
 
 /*---------------storie-section--------------*/
 
@@ -800,12 +819,7 @@ background-color: #ffffff;
 
 
   #banner{
-    background-image: url("images/bg_v.png");
-    background-size: contain;
-    background-attachment: fixed;
-    background-origin: content-box;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: hidden;
   }
 
 .btn-action{
@@ -930,12 +944,7 @@ background-color: #ffffff;
   @media only screen and (min-height: 1020px) {
 
     #banner{
-      background: url("images/bg_v.png");
-      background-size: 100vh;
-      background-attachment: fixed;
-      background-origin: content-box;
-      background-repeat: no-repeat;
-      background-position: center;
+      background: hidden;
     }
 
       .image-valori{
