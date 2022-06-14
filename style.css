@@ -5,6 +5,11 @@
   cursor: url("images/x.png"), auto;
 }
 
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 a{
   text-decoration: none;
@@ -35,11 +40,12 @@ z-index: 100;
 
 
 @font-face {
-  font-family: 'Circular Std';
+  font-family: 'Circular Std Light';
   src: url('font/CircularStd-Light.otf') format('woff2');
   font-style: normal;
   font-display: swap;
 }
+
 
 
 @font-face {
@@ -490,6 +496,7 @@ text-align: center;
 
 }
 
+
 .image-title{
   width: 250px;
   margin-top: 20px;
@@ -546,18 +553,18 @@ text-align: center;
   }
 
 
-  .mappa-image{
-    width: 80%;
-    position: relative;
-    text-align: left;
-    z-index: 10;
-  }
+.mappa-image{
+  width: 80%;
+  position: relative;
+  text-align: left;
+  z-index: 10;
+}
 
-  #team{
-      color: black;
-      margin-bottom: 100px;
-      padding-top: 40px;
-    }
+#team{
+    color: black;
+    margin-bottom: 100px;
+    padding-top: 40px;
+  }
 
 
 
