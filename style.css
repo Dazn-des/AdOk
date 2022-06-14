@@ -5,11 +5,6 @@
   cursor: url("images/x.png"), auto;
 }
 
-html, body{
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 
 a{
   text-decoration: none;
@@ -80,10 +75,11 @@ z-index: 100;
 
 /*---------------scroller-section--------------*/
 
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
-  height: 8px;
+  height: 20px;
 
 }
 
@@ -100,6 +96,32 @@ z-index: 100;
   background-position: center;
   display: block;
 }
+
+
+::-webkit-scrollbar-button {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+}
+
+::-webkit-scrollbar-button:end {
+   display: contents;
+}
+
+::-webkit-scrollbar-button:start {
+   display: contents;
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+   background-image:url('images/icona_freccia_blk.png');
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+    background-image:url('images/icona_freccia_blk_l.png');
+}
+
 
 
 /*---------------cursor-section--------------*/
@@ -473,7 +495,7 @@ text-align: center;
 }
 
 .footer-icon{
-  width: 20px;
+  width: 18px;
   margin-bottom: 20px;
   margin-right: 5px;
 }
@@ -678,10 +700,12 @@ text-align: center;
 
 .scrolling-wrapper{
   overflow-x: scroll;
+  transform: rotateX(180deg);
 }
 
-.scrolling-wrapper::-webkit-scrollbar{
-
+.scrolling-wrapper::-webkit-scrollbar-thumb
+{
+  background: none;
 }
 
 
@@ -693,7 +717,7 @@ text-align: center;
 	background-size: cover;
 	transition: all 0.2s ease-in-out !important;
 	border-radius: 13px;
-
+transform: rotateX(180deg);
 }
 
 card-block:hover{
@@ -787,8 +811,8 @@ background-color: #ffffff;
     padding-right: 25vw;
     padding-top: 12vh;
     background: url("images/nav_bg.png");
-    background-size: cover;
-    background-attachment: sticky;
+    background-size: contain;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-color: white;
@@ -878,6 +902,15 @@ background-color: #ffffff;
    width: 100%;
  }
 
+
+   .carousel-item{
+     height: 30vh;
+   }
+
+ .carousel-item,.image-function{
+   width: 100%;
+ }
+
   .function-list p{
     text-align: center;
   }
@@ -923,9 +956,6 @@ background-color: #ffffff;
     text-align: center;
   }
 
-  .carousel-item{
-    height: 30vh;
-  }
 
 
   @media screen and (max-width:380px){
