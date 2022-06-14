@@ -60,6 +60,13 @@ z-index: 100;
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('font/CircularStd-Book.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 @font-face {
@@ -135,7 +142,6 @@ nav{
 
 nav ul {
   text-align: center;
-
 }
 
 nav ul li {
@@ -160,12 +166,12 @@ nav ul li {
 
 .nav-accedi{
   font-family: 'Circular Std Bold', sans-serif;
-  font-size: 20px;
-  color: #F23005;
+  font-size: 15px;
+  color: black;
 }
 
 .nav-accedi:hover{
-  color: black;
+  color: white;
 }
 
 .logo{
@@ -253,9 +259,6 @@ nav ul li {
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-right: 20px;
   text-align: center;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -266,6 +269,8 @@ nav ul li {
 
 .btn-action{
   width: 160px;
+  margin-top: 20px;
+  margin-right: 20px;
   display: inline-block;
   transition: width 0.5s;
   -webkit-appearance: none;
@@ -349,13 +354,13 @@ nav ul li {
 
 .btn-function{
   position: absolute;
-  transform: translate(-137%, -250%);
+  transform: translate(-133%, -230%);
   -webkit-appearance: none;
 }
 
 .btn-function-a{
   position: absolute;
-  transform: translate(-150%, -30%);
+  transform: translate(-150%, 30%);
   -webkit-appearance: none;
 }
 
@@ -581,18 +586,17 @@ text-align: center;
   }
 
 
-
 .image-team{
-  width: 100%;
+  width: 110%;
   margin-top: 20px;
   display: block;
 }
 
 .image-hover{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 20px;
+  left: 30px;
+  width: 95%;
   margin-top: 20px;
   opacity: 0;
 }
@@ -784,7 +788,7 @@ background-color: #ffffff;
     padding-top: 12vh;
     background: url("images/nav_bg.png");
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: sticky;
     background-repeat: no-repeat;
     background-position: center;
     background-color: white;
@@ -801,15 +805,15 @@ background-color: #ffffff;
 
 
   .nav-link{
-    font-family: 'Circular Std Medium', sans-serif;
-    font-size: 28px;
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 26px;
     color: black;
   }
 
   .nav-accedi{
-    font-family: 'Circular Std Bold', sans-serif;
-    font-size: 28px;
-    color: #F23005;
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 30px;
+    color: black;
   }
 
   .nav-link:hover{
@@ -817,9 +821,8 @@ background-color: #ffffff;
     text-decoration: underline;
   }
 
-
   #banner{
-    background: hidden;
+    background: none;
   }
 
 .btn-action{
@@ -828,7 +831,6 @@ background-color: #ffffff;
   margin-right: 0;
   -webkit-appearance: none !important;
 }
-
 
   #footer{
     padding: 0 0 0 0;
@@ -944,7 +946,7 @@ background-color: #ffffff;
   @media only screen and (min-height: 1020px) {
 
     #banner{
-      background: hidden;
+      background: none;
     }
 
       .image-valori{
