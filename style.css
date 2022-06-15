@@ -2,13 +2,15 @@
   margin: 0;
   padding: 0;
   font-family: 'Circular Std Light', sans-serif;
-  cursor: url("images/x.png"), auto;
+  cursor: url('images/cursor.png'), auto;
 }
+
 
 
 a{
   text-decoration: none;
 }
+
 
 .row{
   display: flex;
@@ -126,9 +128,6 @@ z-index: 100;
 
 /*---------------cursor-section--------------*/
 
-.cursor {
-
-}
 
 .container, .container-fluid, .container-lg, .container-sm, .container-xl{
     margin-left: auto;
@@ -149,6 +148,7 @@ button{
   display: inline-block;
   z-index: 10;
   -webkit-appearance: none !important;
+  cursor: url('images/cursor_pointer.png'), auto;
 }
 
 
@@ -160,6 +160,7 @@ nav{
   background-color: white;
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
 }
 
 nav ul {
@@ -178,7 +179,7 @@ nav ul li {
   font-size: 15px;
   font-family: 'Circular Std Light', sans-serif;
   text-align: center;
-  cursor: pointer;
+  cursor: url('images/cursor_pointer.png'), auto;
 }
 
  .nav-link:hover{
@@ -190,6 +191,7 @@ nav ul li {
   font-family: 'Circular Std Bold', sans-serif;
   font-size: 15px;
   color: black;
+  cursor: url('images/cursor_pointer.png'), auto;
 }
 
 .nav-accedi:hover{
@@ -261,11 +263,13 @@ nav ul li {
   display: inline-block;
   position: relative;
   -webkit-appearance: none;
+  cursor: url('images/cursor_pointer.png'), auto;
 }
 
 .button-icon{
   width: 10%;
   -webkit-appearance: none;
+  cursor: url('images/cursor_pointer.png'), auto;
 }
 
 
@@ -274,11 +278,11 @@ nav ul li {
   background-color: white;
   border-color: black;
   color: black;
+  cursor: url('images/cursor_pointer.png'), auto;
 }
 
 
 .btn{
-  cursor: pointer;
   display: inline-block;
   font-size: 15px;
   text-align: center;
@@ -286,6 +290,7 @@ nav ul li {
   -ms-user-select: none;
   user-select: none;
   vertical-align: middle;
+  cursor: url('images/cursor_pointer.png'), auto;
 }
 
 
@@ -296,6 +301,7 @@ nav ul li {
   display: inline-block;
   transition: width 0.5s;
   -webkit-appearance: none;
+  cursor: url('images/cursor_pointer.png'), auto;
 }
 
 .btn-action:hover{
@@ -811,7 +817,7 @@ background-color: #ffffff;
     padding-right: 25vw;
     padding-top: 12vh;
     background: url("images/nav_bg.png");
-    background-size: contain;
+    background-size: 50vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
